@@ -1,0 +1,392 @@
+{
+  "created": "2019-03-14T10:41:49.737178148+13:00",
+  "top_severity": "High",
+  "watch_name": "docker-repo-watcher",
+  "policy_name": "repo-security-sev-high-policy",
+  "issues": [
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2017-08-05T20:23:34.4+12:00",
+      "summary": "In shadow before 4.5, the newusers tool could be made to manipulate internal data structures in ways unintended by the authors. Malformed input may lead to crashes (with a buffer overflow or other memory corruption) or other unspecified behaviors. This crosses a privilege boundary in, for example, certain web-hosting environments in which a Control Panel allows an unprivileged user account to create subaccounts.",
+      "description": "In shadow before 4.5, the newusers tool could be made to manipulate internal data structures in ways unintended by the authors. Malformed input may lead to crashes (with a buffer overflow or other memory corruption) or other unspecified behaviors. This crosses a privilege boundary in, for example, certain web-hosting environments in which a Control Panel allows an unprivileged user account to create subaccounts.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "shadow:1:4.4-4.1",
+              "path": "",
+              "sha256": "b92376398321ede14a3d19334609111a1d2705dc31a0f6e5dcd68d14274db088",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:shadow:1:4.4-4.1",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2017-12424"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2016-11-28T02:15:51.747+13:00",
+      "summary": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+      "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "tar:1.29b-1.1",
+              "path": "",
+              "sha256": "ca820aec608de416f55d0ac68a74761cc7d555d39967400b26396af9bd67039c",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:tar:1.29b-1.1",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2005-2541"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2017-05-09T23:41:42.285+12:00",
+      "summary": "The xdr_bytes and xdr_string functions in the GNU C Library (aka glibc or libc6) 2.25 mishandle failures of buffer deserialization, which allows remote attackers to cause a denial of service (virtual memory allocation, or memory consumption if an overcommit setting is not used) via a crafted UDP packet to port 111, a related issue to CVE-2017-8779.",
+      "description": "The xdr_bytes and xdr_string functions in the GNU C Library (aka glibc or libc6) 2.25 mishandle failures of buffer deserialization, which allows remote attackers to cause a denial of service (virtual memory allocation, or memory consumption if an overcommit setting is not used) via a crafted UDP packet to port 111, a related issue to CVE-2017-8779.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "glibc:2.24-11+deb9u4",
+              "path": "",
+              "sha256": "4242515392ee7799312df270652c0f2fb69a94f2aa7232927b9ce92082fe123d",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:glibc:2.24-11+deb9u4",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2017-8804"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2018-02-05T03:11:27.649+13:00",
+      "summary": "The malloc implementation in the GNU C Library (aka glibc or libc6), from version 2.24 to 2.26 on powerpc, and only in version 2.26 on i386, did not properly handle malloc calls with arguments close to SIZE_MAX and could return a pointer to a heap region that is smaller than requested, eventually leading to heap corruption.",
+      "description": "The malloc implementation in the GNU C Library (aka glibc or libc6), from version 2.24 to 2.26 on powerpc, and only in version 2.26 on i386, did not properly handle malloc calls with arguments close to SIZE_MAX and could return a pointer to a heap region that is smaller than requested, eventually leading to heap corruption.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "glibc:2.24-11+deb9u4",
+              "path": "",
+              "sha256": "4242515392ee7799312df270652c0f2fb69a94f2aa7232927b9ce92082fe123d",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:glibc:2.24-11+deb9u4",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2018-6551"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2018-01-13T16:04:15.207+13:00",
+      "summary": "In glibc 2.26 and earlier there is confusion in the usage of getcwd() by realpath() which can be used to write before the destination buffer leading to a buffer underflow and potential code execution.",
+      "description": "In glibc 2.26 and earlier there is confusion in the usage of getcwd() by realpath() which can be used to write before the destination buffer leading to a buffer underflow and potential code execution.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "glibc:2.24-11+deb9u4",
+              "path": "",
+              "sha256": "4242515392ee7799312df270652c0f2fb69a94f2aa7232927b9ce92082fe123d",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:glibc:2.24-11+deb9u4",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2018-1000001"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2017-07-14T18:02:03.289+12:00",
+      "summary": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+      "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "pcre3:2:8.39-3",
+              "path": "",
+              "sha256": "55e348b226f6d735bdf4204477f42333f293d533494b5725e576a1fbead73d3f",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:pcre3:2:8.39-3",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2017-11164"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2016-11-28T02:17:10.369+13:00",
+      "summary": "runuser in util-linux allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+      "description": "runuser in util-linux allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "util-linux:2.29.2-1+deb9u1",
+              "path": "",
+              "sha256": "6305100e594f4525c7c6c26e4e0e8b7c63cd6fa44b3b9227b544e29da5c6c206",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:util-linux:2.29.2-1+deb9u1",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2016-2779"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2018-02-05T03:13:03.499+13:00",
+      "summary": "An integer overflow in the implementation of the posix_memalign in memalign functions in the GNU C Library (aka glibc or libc6) 2.26 and earlier could cause these functions to return a pointer to a heap area that is too small, potentially leading to heap corruption.",
+      "description": "An integer overflow in the implementation of the posix_memalign in memalign functions in the GNU C Library (aka glibc or libc6) 2.26 and earlier could cause these functions to return a pointer to a heap area that is too small, potentially leading to heap corruption.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "glibc:2.24-11+deb9u4",
+              "path": "",
+              "sha256": "4242515392ee7799312df270652c0f2fb69a94f2aa7232927b9ce92082fe123d",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:glibc:2.24-11+deb9u4",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2018-6485"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2019-02-28T16:31:09.966+13:00",
+      "summary": "In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match.",
+      "description": "In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "glibc:2.24-11+deb9u4",
+              "path": "",
+              "sha256": "4242515392ee7799312df270652c0f2fb69a94f2aa7232927b9ce92082fe123d",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:glibc:2.24-11+deb9u4",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2019-9169"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2018-03-30T12:35:49.528+13:00",
+      "summary": "systemd-tmpfiles in systemd through 237 mishandles symlinks present in non-terminal path components, which allows local users to obtain ownership of arbitrary files via vectors involving creation of a directory and a file under that directory, and later replacing that directory with a symlink. This occurs even if the fs.protected_symlinks sysctl is turned on.",
+      "description": "systemd-tmpfiles in systemd through 237 mishandles symlinks present in non-terminal path components, which allows local users to obtain ownership of arbitrary files via vectors involving creation of a directory and a file under that directory, and later replacing that directory with a symlink. This occurs even if the fs.protected_symlinks sysctl is turned on.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "systemd:232-25+deb9u9",
+              "path": "",
+              "sha256": "151fc96adac646d336e3c242164b36f05b063715d4653882db2bc0e6554385e8",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:systemd:232-25+deb9u9",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2018-6954"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2018-10-29T14:05:20.371+13:00",
+      "summary": "A vulnerability in unit_deserialize of systemd allows an attacker to supply arbitrary state across systemd re-execution via NotifyAccess. This can be used to improperly influence systemd execution and possibly lead to root privilege escalation. Affected releases are systemd versions up to and including 239.",
+      "description": "A vulnerability in unit_deserialize of systemd allows an attacker to supply arbitrary state across systemd re-execution via NotifyAccess. This can be used to improperly influence systemd execution and possibly lead to root privilege escalation. Affected releases are systemd versions up to and including 239.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "systemd:232-25+deb9u9",
+              "path": "",
+              "sha256": "151fc96adac646d336e3c242164b36f05b063715d4653882db2bc0e6554385e8",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:systemd:232-25+deb9u9",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2018-15686"
+    },
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2017-07-08T17:36:27.806+12:00",
+      "summary": "systemd v233 and earlier fails to safely parse usernames starting with a numeric digit (e.g. \"0day\"), running the service in question with root privileges rather than the user intended.",
+      "description": "systemd v233 and earlier fails to safely parse usernames starting with a numeric digit (e.g. \"0day\"), running the service in question with root privileges rather than the user intended.",
+      "impacted_artifacts": [
+        {
+          "name": "manifest.json",
+          "display_name": "zhongjiajie/docker-airflow:5d7d72f",
+          "path": "artifactory2/docker-repo-local/zhongjiajie/docker-airflow/5d7d72f/",
+          "pkg_type": "Docker",
+          "sha256": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "1bfbaee6a2890f28569603eba111a933ce3d558b2ac44456142d6e57b657b544",
+          "infected_files": [
+            {
+              "name": "systemd:232-25+deb9u9",
+              "path": "",
+              "sha256": "151fc96adac646d336e3c242164b36f05b063715d4653882db2bc0e6554385e8",
+              "depth": 0,
+              "parent_sha": "f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4",
+              "display_name": "debian:stretch:systemd:232-25+deb9u9",
+              "pkg_type": "Debian"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2017-1000082"
+    }
+  ]
+}

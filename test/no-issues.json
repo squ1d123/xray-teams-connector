@@ -1,0 +1,8 @@
+{
+  "created": "2019-03-14T10:41:49.737178148+13:00",
+  "top_severity": "High",
+  "watch_name": "docker-repo-watcher",
+  "policy_name": "repo-security-sev-high-policy",
+  "issues": [
+  ]
+}
