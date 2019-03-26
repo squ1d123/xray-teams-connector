@@ -7,6 +7,8 @@ import (
 	"github.com/deckarep/golang-set"
 	"github.com/gorilla/mux"
 	"github.com/jessevdk/go-flags"
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	log "github.com/sirupsen/logrus"
 	"io/ioutil"
 	"net/http"
@@ -239,7 +241,11 @@ var opts struct {
 // main function to boot up everything
 func main() {
 	log.Info("Starting up REST interface on port 8000")
+
 	router := mux.NewRouter()
+	// Instrument the /webhook endpoint for prometheus instrumentation
+	router.HandleFunc("/webhook", prometheus.InstrumentHandlerFunc("webhook", SendXrayMessage))
 	router.HandleFunc("/webhook", SendXrayMessage).Methods("POST")
+	router.Handle("/metrics", promhttp.Handler())
 	log.Fatal(http.ListenAndServe(":8000", router))
 }
