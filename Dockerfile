@@ -5,6 +5,7 @@ FROM golang:alpine AS builder
 WORKDIR /mypackage/myapp/
 COPY . .
 # This uses `go modules` which means that a build will automatically get the dependencies
+RUN apk add --no-cache git
 RUN go build -tags netgo -o /go/bin/xray-teams-connector
 ############################
 # STEP 2 build a small image
